@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  /*делаем чёрный фон и выравниваем всё по центру*/
+  body {
+    background-image: url(bg.jpg);
+    background-position: center center;
+    background-size: 10% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /*толщина холста — 1 пиксель, белый цвет*/
+  canvas {
+    border: 1px solid white;
+    background-color: black;
+  } 
+
+  .score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 56px;
+    position: absolute;
+    left: 20%;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px 30px;
+    transition: 1s;
+    user-select: none;
+  }
+
+  .toggle {
+    background-color: red;
+  }
